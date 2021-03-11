@@ -1,10 +1,9 @@
-package com.lkp.jwtexample.faced.impl;
+package com.lkp.jwtexample.facade.impl;
 
 import com.lkp.jwtexample.autogenerator.entity.TbUser;
 import com.lkp.jwtexample.bll.TbUserBll;
 import com.lkp.jwtexample.dto.UserDto;
-import com.lkp.jwtexample.exp.MyException;
-import com.lkp.jwtexample.faced.TbUserFaced;
+import com.lkp.jwtexample.facade.ITbUserFaced;
 import com.lkp.jwtexample.util.JwtUtil;
 import com.lkp.jwtexample.params.LoginParams;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-public class TbUserFacedImpl implements TbUserFaced {
+public class ITbUserFacedImpl implements ITbUserFaced {
     @Autowired
     TbUserBll userBll;
 

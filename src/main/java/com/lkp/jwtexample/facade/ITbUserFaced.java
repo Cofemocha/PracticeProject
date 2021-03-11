@@ -1,10 +1,9 @@
-package com.lkp.jwtexample.faced;
+package com.lkp.jwtexample.facade;
 
 import com.lkp.jwtexample.dto.UserDto;
 import com.lkp.jwtexample.params.LoginParams;
-import org.springframework.stereotype.Service;
 
 
-public interface TbUserFaced {
+public interface ITbUserFaced {
     UserDto login(LoginParams loginParams);
 }

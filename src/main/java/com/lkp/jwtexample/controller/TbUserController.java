@@ -44,7 +44,7 @@ public class TbUserController extends BaseController{
            Cookie cookie = new Cookie("token",dto.getToken());
            cookie.setMaxAge(60*30);
            response.addCookie(cookie);
-           return  renderSuccess(cookie.getValue());
+           return  renderSuccess(dto.getToken());
        }
 
 
